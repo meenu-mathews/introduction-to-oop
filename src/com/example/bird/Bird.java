@@ -20,6 +20,13 @@ public abstract class Bird {
         pippa.speak();
         pippa.fly();
         pippa.eatPizza();
+
+        Penguin pingu = new Penguin("Pingu", "Black & White");
+        pingu.speak();
+        pingu.fly();
+
+        Parrot papa = new Parrot("Papa", "Green");
+        papa.speak();
     }
 }
 
