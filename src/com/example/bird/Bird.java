@@ -1,6 +1,6 @@
 package com.example.bird;
 
-public abstract class Bird implements DanceImpl{
+public abstract class Bird implements Dance{
     protected String name;
     protected String color;
 
@@ -23,25 +23,6 @@ public abstract class Bird implements DanceImpl{
     public void jump(){
         System.out.println(name + " jump in the air!");
     }
-    public static void main(String[] args) {
 
-        Pigeon pippa = new Pigeon("Pippa", "Grey");
-        pippa.speak();
-        pippa.fly();
-        pippa.eatPizza();
-        pippa.spin();
-        pippa.doTheCaterpillar();
-        pippa.jump();
-
-        Penguin pingu = new Penguin("Pingu", "Black & White");
-        pingu.speak();
-        pingu.fly();
-        pingu.spin();
-        pingu.doTheCaterpillar();
-        pingu.jump();
-
-        Parrot papa = new Parrot("Papa", "Green");
-        papa.speak();
-    }
 }
 
